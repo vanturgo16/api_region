@@ -28,13 +28,13 @@ Route::get('test', [RegionalController::class, 'testConnect']);
 
 Route::middleware('auth:api')->group( function () {
     //REGIONAL
-    Route::post('regional', [RegionalController::class, 'regionalName']);
-    Route::post('regional/search', [RegionalController::class, 'regionalById']);
-    Route::get('regional/all', [RegionalController::class, 'regionalAll']);
-    Route::get('regional/all-group', [RegionalController::class, 'regionalAllGroup']);
-    Route::post('regional/add', [RegionalController::class, 'addRegional']);
-    Route::post('regional/update', [RegionalController::class, 'updateRegional']); //BELUM Monitor KETIKA PROSES butuh atau tidak
-    Route::post('regional/delete', [RegionalController::class, 'deleteRegional']);
+    // Route::post('regional', [RegionalController::class, 'regionalName']);
+    // Route::post('regional/search', [RegionalController::class, 'regionalById']);
+    // Route::get('regional/all', [RegionalController::class, 'regionalAll']);
+    // Route::get('regional/all-group', [RegionalController::class, 'regionalAllGroup']);
+    // Route::post('regional/add', [RegionalController::class, 'addRegional']);
+    // Route::post('regional/update', [RegionalController::class, 'updateRegional']); //BELUM Monitor KETIKA PROSES butuh atau tidak
+    // Route::post('regional/delete', [RegionalController::class, 'deleteRegional']);
 
     //PROVINCE
     Route::get('province', [ProvinceController::class, 'provinceName']);
@@ -57,5 +57,5 @@ Route::middleware('auth:api')->group( function () {
     Route::post('subdistrict/search', [SubDistrictController::class, 'subDistrictById']);
 
     //Country Dial Code
-    Route::get('country-code', [DialCodeController::class, 'listCountry']);
+    //Route::get('country-code', [DialCodeController::class, 'listCountry']);
 });
